@@ -13,17 +13,17 @@ export default function decorate(block) {
   name.className += 'contact--name';
   wrapper.append(name);
 
-    company.className += 'contact--company';
-    wrapper.append(company);
+  company.className += 'contact--company';
+  wrapper.append(company);
 
-    const mailP = email?.children?.[0];
-    const mailA = mailP?.children?.[0];
-    mailA.className = '';
-    mailP.innerHTML = '';
-    mailP.append(mailA);
-   if(mailP) mailP.className += 'contact--email';
-    wrapper.append(mailP);
+  const mailP = email?.children?.[0];
+  const mailA = mailP?.children?.[0];
+  mailA.className = '';
+  mailP.innerHTML = '';
+  mailP.append(mailA);
+  if (mailP) mailP.className += 'contact--email';
+  wrapper.append(mailP);
 
-    block.innerHTML = '';
-    block.append(wrapper);
+  block.innerHTML = '';
+  block.append(wrapper);
 }

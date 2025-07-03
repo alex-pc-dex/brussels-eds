@@ -2,7 +2,7 @@ import ffetch from '../../scripts/ffetch.js';
 import { createOptimizedPicture } from '../../scripts/aem.js';
 
 /**
- * Fetches news data from the news index
+ * Fetches news data from the news index.
  * @returns {Promise<Array>} The news data
  */
 async function fetchNews() {
